@@ -25,7 +25,7 @@ under the License.
   <parent>
     <groupId>org.apache.maven.shared</groupId>
     <artifactId>maven-shared-components</artifactId>
-    <version>31</version>
+    <version>34</version>
     <relativePath>../../pom/maven/maven-shared-components/pom.xml</relativePath>
   </parent>
 
@@ -66,11 +66,6 @@ under the License.
     </contributor>
   </contributors>
 
-  <properties>
-    <surefire.version>2.21.0</surefire.version>
-    <javaVersion>7</javaVersion>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.maven.shared</groupId>
@@ -101,6 +96,7 @@ under the License.
             <property>
               <name>maven.home</name>
               <value>${maven.home}</value>
+              <https.protocols>${https.protocols}</https.protocols>
             </property>
           </systemProperties>
           <excludes>
@@ -141,6 +137,7 @@ under the License.
                 <property>
                   <name>maven.repo.local</name>
                   <value>${maven.repo.local}</value>
+                  <https.protocols>${https.protocols}</https.protocols>
                 </property>
               </systemProperties>
             </configuration>
